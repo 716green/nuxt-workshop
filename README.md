@@ -1,12 +1,6 @@
 <h1 align="center">
-Building From Scratch with Nuxt Workshop
+SSR with Nuxt
 </h1>
-
-<p align="center">This workshop is for anyone with knowledge of JavaScript and Vue.js interested in building web applications with Nuxt.js</p>
-
-Instructor: <a href="https://giftegwuenu.com">Gift Egwuenu</a>
-
-[Workshop Slides](https://miro.com/app/board/o9J_kki51ks=/)
 
 ## Sections
 - [Introduction](#Introduction)
@@ -26,70 +20,13 @@ Instructor: <a href="https://giftegwuenu.com">Gift Egwuenu</a>
 ## Introduction
 [Nuxt.js](https://nuxtjs.org/) is a Vue framework for creating modern web applications that makes development painless and powerful with great developer experience.
 
-In this workshop, we'll cover everything you need to know to build a web application from scratch with Nuxtjs. Some things we'll cover include setting up a nuxt app and extending it's functionality with Nuxt Modules and finally, we'll look at some deployment strategies.
-
-## Setup and Installation
-We need to have [Node](https://nodejs.org/) installed on our computer before we begin the workshop.
-
-Download Node for windows [here](https://nodejs.org/en/download/)
-
-Download Node for Mac using [Homebrew](https://brew.sh/).
-
-If we don't have that installed use this command to install it
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-```
-and then install node:
-
-```bash
-brew install node
-```
-
 ### Install Nuxt with Create Nuxt App
 
 ```bash
 npx create-nuxt-app <project-name>
 ```
 
-We already have a repo setup so go ahead and clone this repo using the following commands:
-
-```
-git clone https://github.com/lauragift21/nuxt-workshop.git
-```
-
-```
-cd nuxt-workshop && yarn
-```
-
 > This repo is setup to use [TailwindCSS](https://tailwindcss.com/) for **styling**.
-
-### Exercise 1 (Installation and Setup)
-
-Setup a Nuxt project using the guide detailed above and make sure to have the project running on your computer.
-
-## What is Nuxt.js and what does it offers?
-
-[Nuxt.js](https://nuxtjs.org/) is an open-source Vue framework for building modern web applications that makes development painless and powerful with a great developer experience.
-
-Some of these features are what make Nuxt performant and a good choice for your app:
-
-* Automatic Code Splitting
-* Server-Side Rendered, Static-Site Generated / Jamstack, SPA
-* Powerful routing system with asynchronous data
-* Extend with modular architecture
-* Hot Module Replacement in Development
-* Write Vue Files **(*.vue)**
-* ES6 Transpilation
-* Powerful Lighthouse scores out of the box!
-* Pre-processing - SCSS, SASS, LESS.
-
-## A Look at Nuxt Directory Structure
-
-The default Nuxt application structure is made up of different files and directories in itself which can be used in building small or large scale applications. The way the directory is setup can always be modified to fit our project needs.
-
-This is a structure tree of a Nuxt directory: 
 
 ```bash
 .
@@ -121,10 +58,6 @@ This is a structure tree of a Nuxt directory:
 ```
 
 ## Configuring Nuxt with nuxt.config.js
-
-The configuration for Nuxt application is great and it already covers most use-cases, but Nuxt allows us extend the configuration by specifying the config properties in the `nuxt.config.js` file.
-
-Nuxt let's us customise **webpack configuration**,  define **CSS libraries** to use globally, create **environment variables**, define **meta data** for our application and so much more can be done in the config file.
 
 The [docs](https://nuxtjs.org/guides/configuration-glossary/configuration-build) have a listing of all properties for customization in `nuxt.config.js` file.
 
