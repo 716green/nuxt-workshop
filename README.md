@@ -2,20 +2,6 @@
 SSR with Nuxt
 </h1>
 
-## Sections
-- [Introduction](#Introduction)
-- [Setup and Installation](#setup-and-installation)
-- [What is Nuxt.js and what does it offers?](#what-is-nuxt.js-and-what-does-it-offers?)
-- [A Look at the Nuxt Directory Structure](#a-look-at-the-nuxt-directory-structure)
-- [Configuring Nuxt with Nuxt.config.js](#configuring-nuxt-with-nuxt.config.js)
-- [The Concept of Layout and Pages](#the-concept-of-layout-and-pages)
-- [File System Routing with Nuxt](#file-system-routing-with-nuxt)
-- [Fetching Data in Nuxt](#fetching-data-in-nuxt)
-- [SEO in Nuxt with vue-meta](#seo-in-nuxt-with-vue-meta)
-- [Nuxt Plugins](#nuxt-plugins)
-- [Extending the App with Nuxt Modules](#extending-the-app-with-nuxt-modules)
-- [Deployment Strategies](#deployment-strategies)
-
 
 ## Introduction
 [Nuxt.js](https://nuxtjs.org/) is a Vue framework for creating modern web applications that makes development painless and powerful with great developer experience.
@@ -115,14 +101,6 @@ Nuxt add special attributes and functions to a Page to make development of our u
 Views in Nuxt compose of App template, a Layout and an actual Page. In addition, we can define custom meta tags for the head section of each page which are important for SEO (Search Engine Optimization) and setup other custom options in a Page.
 
 ![views](./static/views.png)
-
-### Exercise 2 (The Concept of Layouts and Pages)
-
-Create an About Page within the **Pages Directory** and populate it with a short description about yourself or your bio.
-
-Here's an example:
-
-![about](./static/About.png)
 
 ## File System Routing with Nuxt
 
@@ -361,13 +339,6 @@ export default {
 </script>
 ```
 
-### Exercise 3 (SEO in Nuxt with Vue Meta)
-
-Setup the required Meta Tags for your application on two levels:
-
-- Global Level (nuxt.config.js)
-- Local Level (About Component)
-
 ## Nuxt Plugins
 Nuxt.js Plugins allows us to define **Javascript Plugins** that we can run before instantiating the root Vue.js Application.
 
@@ -528,10 +499,6 @@ You can use the `<nuxt-content />` component to display content from the markdow
 
 In development mode, you can edit your content by double-clicking on the <nuxt-content> component. A textarea will allow you to edit the content of the current file and will save it on the file-system.
 
-### Exercise 4 (Nuxt Content)
-
-Create a new directory in `content` called **products** and add markdown files with metadata about any product (gadgets, food, clothes). Then, create a Page called **Product.vue** inside `pages` directory and fetch and display the content in the page.
-
 ## Deployment Strategies
 
 Nuxt applications can be deployed in **three** different ways using different rendering modes:
@@ -610,9 +577,7 @@ the `generate` command will build the app and generate it's HTML and JavaScript 
 
 For every change that is made to the application there need to be a rebuild phase, that's where static hosting comes in because this process is automated when you use these service.
 
-### Exercise 5: Deployment Strategies
-
-We now understand the different ways of deploying a Nuxt application.
+### Deployment
 
 Let's deploy our application to [Netlify](https://netlify.com) using the Static Generated method(SSG).
 
